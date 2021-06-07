@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f7f7f7;
+}
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+.conteudo-site {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0;
+}
+h1 {
+  font-size: 27px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  font-family: "Bebas Neue", cursive;
+  margin: 50px 0;
+}
+p {
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: "Bebas Neue", cursive;
+}
+img {
+  width: 100%;
+  max-width: 350px;
+}
+.progress {
+  width: 100%;
+  max-width: 260px;
+  height: 6px;
+  background: #e1e4e8;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.progress .progress-bar {
+  display: block;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    green,
+    rgb(91, 247, 91) 17%,
+    rgb(68, 185, 68) 34%,
+    rgb(96, 243, 96) 51%,
+    rgb(7, 247, 7) 68%,
+    rgb(100, 243, 100) 85%,
+    green
+  );
+  background-size: 300% 100%;
+  -webkit-animation: progress-animation 2s linear infinite;
+  animation: progress-animation 2s linear infinite;
+}
+
+@-webkit-keyframes progress-animation {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+@keyframes progress-animation {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
+  }
+}
